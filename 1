@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  
+   int n;
+   printf("Digite a qtd de numeros que dejesa locar: ");
+   scanf("%i",&n);
+   
+   int *end_n;
+   end_n = (int*)malloc(n* sizeof(int));
+   
+   for(int i = 0;  i < n; i++){
+       printf("numero do elemento: ");
+       scanf("%i",&end_n[i]);
+       printf("endereco: %p", &end_n[i]);
+   }
+   
+   return 0;
+}
